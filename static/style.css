@@ -80,20 +80,19 @@ button:hover {
   background: #357abd;
 }
 
-/* Output text */
-#answer,
-#summary {
+/* Divider */
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #eee;
+}
+.response-box {
   margin-top: 10px;
   padding: 12px;
   background: #f0f4ff;
   border-left: 4px solid #4a90e2;
   border-radius: 6px;
   min-height: 30px;
-}
-
-/* Divider */
-hr {
-  margin: 30px 0;
-  border: none;
-  border-top: 1px solid #eee;
+  white-space: normal;
+  line-height: 1.7;
 }
