@@ -8,7 +8,7 @@ app = Flask(__name__)
 load_dotenv()
 api_key = os.getenv("groq_api_key")
 
-client = Groq(api_key="api_key")
+client = Groq(api_key=api_key)
 
 @app.route("/")
 def hello_world():
@@ -51,10 +51,10 @@ def summarize():
             {
                 "role": "user",
                 "content": prompt
-            },]
-            temperature = 0.7,
-            max_tokens = 512
-        
+            }]
+        ,
+        temperature = 0.7,
+        max_tokens = 512
     )
 
     summary = response.choices[0].message.content.strip()
