@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template, request
-from flask.cli import load_dotenv
+from dotenv import load_dotenv
 import os
 from groq import Groq
 
