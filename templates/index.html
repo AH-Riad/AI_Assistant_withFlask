@@ -7,5 +7,19 @@
   </head>
   <body>
     <h1 class="main-heading">AI Personal Assistant</h1>
+    <div class="container">
+      <h2>Ask anything</h2>
+      <form id="askForm">
+        <input
+          type="text"
+          name="question"
+          placeholder="Ask a question..."
+          required
+        />
+        <button type="submit">Ask</button>
+      </form>
+      <p id="ans-loading" style="display: none">Processing...</p>
+      <p id="answer"></p>
+    </div>
   </body>
 </html>
