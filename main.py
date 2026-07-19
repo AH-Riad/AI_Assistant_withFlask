@@ -22,7 +22,7 @@ def ask():
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            { "role": "system", "content": "You are a helpful assistant." },
+            { "role": "system", "content": "You are a helpful assistant. Format your responses using Markdown" },
             {
                 "role": "user",
                 "content": question
@@ -47,7 +47,7 @@ def summarize():
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[
-            { "role": "system", "content": "You are an expert email assistant." },
+            { "role": "system", "content": "You are an expert email assistant. Format your responses using Markdown" },
             {
                 "role": "user",
                 "content": prompt
