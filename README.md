@@ -22,7 +22,8 @@ AI_Assistant_withFlask/
 ├── .gitignore            # Ignores .env, __pycache__, etc.
 │
 ├── templates/
-│   └── index.html        # Frontend UI (HTML + vanilla JS)
+│   └── index.html        # Frontend UI
+|   └── script.js
 │
 └── static/
     └── style.css         # Styling for the web interface
@@ -35,7 +36,7 @@ AI_Assistant_withFlask/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Vivek30092/AI_Assistant_withFlask.git
+git clone https://github.com/AH-Riad/AI_Assistant_withFlask
 cd AI_Assistant_withFlask
 ```
 
